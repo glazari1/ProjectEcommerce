@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+pillow = "*"
+django-crispy-forms = "*"
+django-admin = "*"
+pylint-django = "*"
+django-debug-toolbar = "*"
+mysql = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
