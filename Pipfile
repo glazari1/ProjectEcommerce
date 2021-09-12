@@ -11,6 +11,7 @@ django-admin = "*"
 pylint-django = "*"
 django-debug-toolbar = "*"
 mysql = "*"
+python-decouple = "*"
 
 [dev-packages]
 
