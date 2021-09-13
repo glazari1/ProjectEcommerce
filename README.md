@@ -1,2 +1,3 @@
 # ProjectEcommerce
-Django project for e-commerce
+
+Django Project for E-commerce
