@@ -39,7 +39,7 @@ class UserForm(forms.ModelForm):
         )
 
     def clean(self, *args, **kwargs):
-        # data = self.data
+        data = self.data
         cleaned = self.cleaned_data
         validation_error_msgs = {}
 
