@@ -182,17 +182,11 @@ class ResumoDaCompra(View):
         perfil = Perfil.objects.filter(usuario=self.request.user).exists()
 
         if not perfil:
-            messages.error(
-                self.request,
-                'Usuário sem perfil.'
-            )
+            messages.error(self.request, 'Usuário sem perfil.')
             return redirect('perfil:criar')
 
         if not self.request.session.get('carrinho'):
-            messages.error(
-                self.request,
-                'Carrinho vazio.'
-            )
+            messages.error(self.request, 'Carrinho vazio.')
             return redirect('produto:lista')
 
         contexto = {
